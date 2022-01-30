@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.main {
+   overflow: auto;
+   /* padding-bottom keeps content from going beneath footer*/
+   padding-bottom: 100px;
+}
+
+.top-nav {
+   background-color: #F5F5F5;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.bottom-nav {
+    background-color: #323232;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.bottom-nav h3 {
+    color: #F5F5F5;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 380px;
+}
+
+.fa-bars {
+    color: #323232;
+    font-size: 26px;
+}
+
+.first-div {
+    border: 3px solid #FFA400;
+    border-radius: 10px;
+    margin: 12px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: 5px solid #FFA400;
+}
+
+.div-1 {
+    border-right: 2px solid #FFA400;
+    /* padding: 7px; */
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-2 {
+    /* padding: 7px; */
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-1 h4 {
+    margin: 10px;
+    font-size: 17px;
+}
+
+.div-2 h4 {
+    margin: 10px;
+    font-size: 17px;
+}
+
+
+.client-info-wrapper {
+    border: 3px solid #D3DEDC;
+    margin: 12px;
+    margin-top: 20px;
+}
+
+.div-001 {
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Bebas Neue', cursive;
+    color: #323232;
+}
+
+.div-002 {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-top: 3px solid #D3DEDC;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-002 h3{
+    margin-right: 10px;
+}
+
+
+.footer {
+    background-color: #323232;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+}
+
+.edit-div {
+    border: 2px solid #FFA400;
+    color: #FFA400;
+    text-align: center;
+    padding: 6px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.edit-div h4:hover {
+    color: #D3DEDC;
+}
+
+.nav-name-div {
+    color: #D3DEDC;
+    letter-spacing: 4px;
+}
+
+
+
+/* */
+
+
+
+
+
+
