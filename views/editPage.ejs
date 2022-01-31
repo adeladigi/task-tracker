@@ -18,11 +18,11 @@
         <div class="main">
 
             <!-- starting nav -->
-            <form id="form" method="post" action="/client-bio">
+            
             <div class="nav">
                 <i id="back-btn" class="fas fa-chevron-left nav-item"></i>
                 <h3 class="nav-item">Edit Profile</h3>
-                <button id="save-btn" type="submit" class="nav-item">Save</button>
+                <h3 id="save-btn"  class="nav-item">Save</h3>
 
             </div>
             <!-- ending nav -->
@@ -40,61 +40,71 @@
 
                 <!-- starting full name -->
                 <div class="full-name-div">
-                    <input class="first-name-input" placeholder="First Name" name="firstName">
+                    <input id="fName-i"class="first-name-input" placeholder="First Name" name="firstName">
                         
                     </input>
-                     <input class="last-name-input" placeholder="Last Name" name="lastName">
+                     <input id="lName-i" class="last-name-input" placeholder="Last Name" name="lastName">
                         
                      </input>
                      
                 </div>
                 <!-- ending full name -->
                 
-                  <input id="gender-input" class="basic-input" placeholder="Gender" name="gender">
-                  <input id="gender-input" class="basic-input" placeholder="Address" name="address">
+                  <input id="gender-i" class="basic-input" placeholder="Gender" name="gender">
+                  <input id="address-i" class="basic-input" placeholder="Address" name="address">
 
                   <div class="city-state-div">
-                    <input id="gender-input" class="two-type-input " placeholder="City" name="city">
-                    <input id="gender-input" class="two-type-input " placeholder="State" name="state">
-                    <input id="gender-input" class="two-type-input " placeholder="Zip Code" name="zip">
+                    <input id="city-i" class="two-type-input " placeholder="City" name="city">
+                    <input id="state-i" class="two-type-input " placeholder="State" name="state">
+                    <input id="zip-i" class="two-type-input " placeholder="Zip Code" name="zip">
                   </div>
 
 
-                <form action="/add-task" method="post">
 
-                 <div class="task-btn-div">
-
-                    <h3 class="task-div-item">Add A Task</h3>
-                    <input class="other-type-div" placeholder="Type Task here" name="task"/>
-                    <i class="fas fa-plus task-div-item"></i>
-                  </div>
-                  
-               </form>      
-
-
-               
-                 <div class="task-list-wrapper">
-                     <% for(let i = 0; i < taskList.length ; i++){ %>
-
-                        <div class="task-styling-div">
-                           <h3><%= taskList[i] %></h3>
-                        </div>
-
-                    <% }  %>
-
-
-                 </div>
                   
                   
             
                 
               
             </div>
-        </form>
+       
             <!-- ending form wrapper -->
+
+        
+                <div class="task-btn-div">
+
+                   <h3 class="task-div-item">Add A Task</h3>
+                   <input class="other-type-div" placeholder="Type Task here" name="task"/>
+                   <i id="fa-plus" class="fas fa-plus"></i>
+                 </div>
+
+              
+
+
+              
+                <div class="task-list-wrapper">
+                    <% for(let i = 0; i < taskList.length ; i++){ %>
+
+                        
+
+                       <div class="task-styling-div">
+                          <h3><%= taskList[i] %></h3>
+                          
+                          <% let task = "task"+ i %>
+                       
+                          <i class="fas fa-trash-alt" id="<%= task %>" ><p class="i"><%= taskList[i] %></p></i>
+                          
+                       </div>
+
+                   <% }  %>
+
+
+                </div>
 
         </div>
     </div>
+
+    <input type="hidden" id="taskLight" value=<%= taskLight %>>
 
     <footer class="footer">
 
