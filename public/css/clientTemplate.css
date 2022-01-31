@@ -46,6 +46,7 @@ html, body {
     color: #F5F5F5;
 }
 
+
 .banner {
     display: flex;
     flex-direction: row;
@@ -113,6 +114,10 @@ html, body {
     color: #323232;
 }
 
+.div-001 p {
+    font-size: 13px;
+}
+
 .div-002 {
     padding: 20px;
     background-color: #F5F5F5;
@@ -125,6 +130,53 @@ html, body {
 .div-002 h3{
     margin-right: 10px;
 }
+
+.task-wrapper {
+  background-color: #fff;
+  border: 2px solid #D3DEDC;
+  margin: 12px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.task-wrapper h3 {
+    font-family: 'Bebas Neue', cursive; 
+    padding: 10px;
+}
+
+.task-wrapper p {
+    font-family: 'Bebas Neue', cursive;
+    padding: 12px;
+    display: block;
+}
+
+.timer-btn-div {
+    border-left: 2px solid #D3DEDC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 350px;
+}
+
+.time-icon {
+    font-size: 20px;
+    margin: 12.25px;
+    cursor: pointer;
+}
+
+.time-icon:hover {
+    color: #FFA400;
+}
+
+
+
 
 
 .footer {
@@ -144,8 +196,13 @@ html, body {
     cursor: pointer;
 }
 
+.edit-div:hover {
+    background-color: #FFA400;
+    color:#323232;
+}
+
 .edit-div h4:hover {
-    color: #D3DEDC;
+    /* color: #D3DEDC; */
 }
 
 .nav-name-div {
@@ -155,7 +212,98 @@ html, body {
 
 
 
-/* */
+/* tablet  */
+
+@media (min-width: 768px){
+
+    .div-001 {
+        padding: 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'Bebas Neue', cursive;
+        color: #323232;
+    }
+
+    .div-001 h5 {
+        font-size: 20px;
+    }
+    
+    .div-001 p {
+        font-size: 18px;
+    }
+
+    .task-info {
+        min-width: 680px;
+    }
+
+    .time-icon {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .timer-btn-div {
+        border-left: 2px solid #D3DEDC;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .time-icon {
+        font-size: 20px;
+        margin: 12.25px;
+        padding-left: 8.25px;
+        padding-right: 8.25px;
+        cursor: pointer;
+    }
+
+
+
+}
+
+
+  /* labtop  1024*/
+@media (min-width: 1024px){
+
+    .task-wrapper {
+        background-color: #fff;
+        border: 2px solid #D3DEDC;
+        margin: 12px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        max-width: 750px;
+      }
+
+      .first-div {
+        max-width: 750px;
+    }
+    
+
+      .client-info-wrapper {
+        border: 3px solid #D3DEDC;
+        margin: 12px;
+        margin-top: 20px;
+        max-width: 750px;
+    }
+
+    .fa-bars {
+    visibility: hidden;
+    }
+
+    .time-icon {
+        font-size: 20px;
+        margin: 12.25px;
+        padding-left: 10.25px;
+        padding-right: 10.25px;
+        cursor: pointer;
+    }
+
+ 
+
+
+}
 
 
 

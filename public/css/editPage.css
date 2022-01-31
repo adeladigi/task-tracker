@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+
+.container {
+    min-height: 100%;
+}
+
+.main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #D3DEDC;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.fa-chevron-left {
+    font-size: 20px;
+    color: #FFA400;
+}
+
+#save-btn {
+    color: #FFA400;
+    border: none;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.banner-div {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #F5F5F5;
+    margin-top: 70px;
+}
+
+.banner-div h3 {
+    font-size: 25px;
+    margin-left: 0px;
+}
+
+.full-name-div {
+    background-color: #fff;
+    border-bottom: 1px solid #D3DEDC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    margin: 12px;
+}
+
+.first-name-input {
+    min-height: 37px;
+    width: 50%;
+    border: none;
+}
+
+.last-name-input {
+    min-height: 37px;
+    width: 50%;
+    border: none;
+}
+
+.gender-div {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.basic-input {
+    min-width: 100%;
+    min-height: 47px;
+    border: none;
+    border-bottom: 1px solid #D3DEDC;
+}
+
+.city-state-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.two-type-input {
+    min-width: 33.33%;
+    min-height: 47px;
+    border: none;
+}
+
+.task-btn-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.task-btn-div h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.task-div-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fa-plus {
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fa-plus:hover {
+    color: #FFA400;
+}
+
+.other-type-div {
+    background-color: #F5F5F5;
+    border: none;
+    margin: 10px;
+}
+
+.task-styling-div {
+    min-height: 47px;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task-styling-div h3 {
+    margin: 10px;
+    color: #323232;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.footer {
+    background-color: #323232;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+}
+
+
+@media (min-width: 768px){
+ 
+    .nav-item {
+        font-size: 25px;
+    }
+    
+    .fa-chevron-left {
+        font-size: 30px;
+        color: #FFA400;
+    }
+
+      
+    .form-wrapper {
+        margin: 50px;
+    }
+
+    .first-name-input {
+        min-height: 60px;
+        width: 50%;
+        border: none;
+    }
+    
+    .last-name-input {
+        min-height: 60px;
+        width: 50%;
+        border: none;
+    }
+
+    .basic-input {
+        min-width: 100%;
+        min-height: 60px;
+        border: none;
+        border-bottom: 1px solid #D3DEDC;
+    }
+
+    .two-type-input {
+        min-width: 33.33%;
+        min-height: 60px;
+        border: none;
+    }
+      
+}
+
+@media (min-width: 1024px){
+    .form-wrapper {
+        margin: 0px;
+        max-width: 750px;
+        margin-left: 10px;
+    }
+
+}

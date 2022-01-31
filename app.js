@@ -22,12 +22,10 @@ const adminSchema = new mongoose.Schema ({
 
 const secret = process.env.SECRET;
 
-
-
-
-
 const Admin = new mongoose.model("Admin",  adminSchema);
 
+
+const taskList = ["Straight Leg Raises", "Lateral Leg Raises", "Back Lunges"];
 
 // App.Get
 app.get("/", function(req, res){
@@ -45,6 +43,11 @@ app.get("/register", function(req, res){
 app.get("/client", function(req, res){
     res.render("clientTemplate");
 });
+
+app.get("/edit", function(req, res){
+   res.render("editPage", {taskList: taskList });
+});
+
 
 
 // App.Post
@@ -100,6 +103,25 @@ app.post("/login", function(req, res){
     // console.log("This is the password: "+passwordTyped);
 });
 
+app.post("/client-bio", function(req, res){
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const gender = req.body.gender;
+    const address = req.body.address;
+    const state = req.body.state;
+    const city = req.body.city;
+    const zip = req.body.zip;
+    const data = req.body;
+
+    console.log(data);
+    
+    res.redirect("/edit");
+});
+
+app.post("/add-task", function(req, res){
+   console.log(req.body.task);
+});
+
 
 // App.Linsten
 app.listen(3000, function(req, res){
@@ -114,3 +136,13 @@ app.listen(3000, function(req, res){
 //2# create client template page and display the data that client will need.
 
 //3# See if you can create a option for light mode and dark mode.
+
+//4# figure out how timer tbn functionality
+
+//5# create a search bar in profile page
+
+//6# times on client profile resets every 24 hours
+
+//7# admin needs to be able to create notes per task
+
+//8# * create task function

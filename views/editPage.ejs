@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+
+        <!-- CSS LINK-->
+        <link rel="stylesheet" href="css/editPage.css">
+
+         <!-- font-awsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="main">
+
+            <!-- starting nav -->
+            <form id="form" method="post" action="/client-bio">
+            <div class="nav">
+                <i id="back-btn" class="fas fa-chevron-left nav-item"></i>
+                <h3 class="nav-item">Edit Profile</h3>
+                <button id="save-btn" type="submit" class="nav-item">Save</button>
+
+            </div>
+            <!-- ending nav -->
+
+
+              
+            <!-- starting form wrapper -->
+            <div class="form-wrapper">
+                 
+
+                 
+                <div class="banner-div">
+                    <h3>Personal Information</h3>
+                 </div>
+
+                <!-- starting full name -->
+                <div class="full-name-div">
+                    <input class="first-name-input" placeholder="First Name" name="firstName">
+                        
+                    </input>
+                     <input class="last-name-input" placeholder="Last Name" name="lastName">
+                        
+                     </input>
+                     
+                </div>
+                <!-- ending full name -->
+                
+                  <input id="gender-input" class="basic-input" placeholder="Gender" name="gender">
+                  <input id="gender-input" class="basic-input" placeholder="Address" name="address">
+
+                  <div class="city-state-div">
+                    <input id="gender-input" class="two-type-input " placeholder="City" name="city">
+                    <input id="gender-input" class="two-type-input " placeholder="State" name="state">
+                    <input id="gender-input" class="two-type-input " placeholder="Zip Code" name="zip">
+                  </div>
+
+
+                <form action="/add-task" method="post">
+
+                 <div class="task-btn-div">
+
+                    <h3 class="task-div-item">Add A Task</h3>
+                    <input class="other-type-div" placeholder="Type Task here" name="task"/>
+                    <i class="fas fa-plus task-div-item"></i>
+                  </div>
+                  
+               </form>      
+
+
+               
+                 <div class="task-list-wrapper">
+                     <% for(let i = 0; i < taskList.length ; i++){ %>
+
+                        <div class="task-styling-div">
+                           <h3><%= taskList[i] %></h3>
+                        </div>
+
+                    <% }  %>
+
+
+                 </div>
+                  
+                  
+            
+                
+              
+            </div>
+        </form>
+            <!-- ending form wrapper -->
+
+        </div>
+    </div>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="editPage.js" ></script>
+    
+</body>
+</html>
