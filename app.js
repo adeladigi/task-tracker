@@ -119,7 +119,8 @@ app.post("/client-bio", function(req, res){
 });
 
 app.post("/add-task", function(req, res){
-   console.log(req.body.task);
+   console.log(req.body);
+   res.redirect("/edit");
 });
 
 
