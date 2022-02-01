@@ -28,8 +28,6 @@ const zip = document.querySelector("#zip-i");
 
 
 
-
-
 // sending total data to sever to save in database
 saveBTN.addEventListener("click", function(){
     let url = "/client-bio";
@@ -88,7 +86,7 @@ addTaskBTN.addEventListener("click", function(){
 task0.addEventListener("click", function(){
     let selectedTask = task0.textContent;
     let urlPath = "/delete-task";
-
+    
     sendTask(selectedTask, urlPath)
     window.location.href ="/edit";
 });
