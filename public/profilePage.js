@@ -2,9 +2,9 @@
 
 
 
-// const backBTN = document.querySelector("#back-btn");
+const logoutBTN = document.querySelector("#log-btn");
 
 
-// backBTN.addEventListener("click", function(){
-//    window.location = ""
-// });
+logoutBTN.addEventListener("click", function(){
+      window.location = "/";
+});
