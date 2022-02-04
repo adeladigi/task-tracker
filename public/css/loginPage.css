@@ -16,11 +16,11 @@ body{
     /* border: 2px solid red; */
 }
 
-.login-div h1 {
-    font-family: 'Bebas Neue', cursive;
-    color: #fff;
+
+.btn-outline-warning{
+    max-width: 230px;
     margin: 10px;
-    cursor: pointer;
+    margin-left:90px;
 }
 
 .input-login {
@@ -29,5 +29,50 @@ body{
     /* font-family: 'Bebas Neue', cursive; */
     position: relative;
     margin: 10px;
+    margin-left:90px;
     border: none;
+}
+
+@media(min-width: 768px){
+
+
+    .btn-outline-warning{
+        max-width: 230px;
+        margin: 10px;
+        margin-left:270px;
+    }
+    
+    .input-login {
+        height: 35px;
+        width: 230px;
+        /* font-family: 'Bebas Neue', cursive; */
+        position: relative;
+        margin: 10px;
+        margin-left:270px;
+        border: none;
+    }
+
+
+
+}
+
+@media(min-width: 1024px){
+
+    .btn-outline-warning{
+        max-width: 230px;
+        margin: 10px;
+        margin-left:400px;
+    }
+    
+    .input-login {
+        height: 35px;
+        width: 230px;
+        /* font-family: 'Bebas Neue', cursive; */
+        position: relative;
+        margin: 10px;
+        margin-left:400px;
+        border: none;
+    }
+
+
 }

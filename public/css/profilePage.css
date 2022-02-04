@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+
+html, body {
+    height: 100%;
+    background-color: #D3DEDC;
+}
+
+.container {
+    min-height: 100%;
+}
+
+
+.main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.nav {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid  #323232;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav-items {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-items:hover {
+    color: #FFA400;
+} 
+
+.nav h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #323232;
+}
+
+.info-div-wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px ;
+
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+    margin: 15px;
+    
+    
+}
+
+.info-div-1 {
+    padding: 30px;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    text-align: center;
+    margin-right: 2px;
+}
+
+.info-div-1 h3{
+    font-family: 'Bebas Neue', cursive;
+    color: #323232;
+}
+
+.info-div-2 {
+    padding: 30px;
+    background-color: #fff;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+}
+
+.info-div-2 h3{
+    font-family: 'Bebas Neue', cursive;
+    color: #323232;
+}
+
+.banner {
+    position: relative;
+    top: 100px;
+    margin: 0px;
+    /* border:1px solid #FFA400; */
+    font-size: 20px;
+    padding: 30px;
+}
+
+.banner h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #323232;
+}
+
+.client-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px;
+    position: relative;
+    top: 80px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.client-wrapper h3, p{
+    font-family: 'Bebas Neue', cursive;
+    color: #323232;
+}
+
+.wrapper-div {
+    
+}
+
+
+.footer {
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    background-color: #323232;
+}
+
+
+

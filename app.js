@@ -85,8 +85,8 @@ app.post("/register", function(req, res){
 
 
 app.post("/login", function(req, res){
-    const emailTyped = req.body.email;
-    const passwordTyped = md5(req.body.password);
+    const emailTyped = req.body.emailTyped;
+    const passwordTyped = md5(req.body.passwordTyped);
 
     console.log(emailTyped)
 
